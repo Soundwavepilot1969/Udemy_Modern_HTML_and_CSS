@@ -20,6 +20,39 @@
   </style>
 </head>
 <body>
+  <!-- Ids and classes are used for styling the items. Ids for styling individual items and classes for styling many together -->
+  <!-- Classes can be repeated but ids should not be -->
+  <div id="main-header"> <!-- Header section--> 
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <div>
+    <ul id="main-nav"> <!-- Navigation-->
+      <li><a href="#">Home </a></li>
+      <li><a href="#">About </a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+
+  </div>
+ <!-- Use # to auto enter divs with a tag after tha  #-> #about and hit tab to get a div with id=about -->
+ <div id="about" class="card"> <!-- Card class added to both about and contact. Css is available above in the head but usually css is in a different file-->
+   <h3>About</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate totam molestias 
+       distinctio nemo qui sed <span class="enhance">consequuntur in adipisci dignissimos minima</span>  optio ullam necessitatibus 
+       expedita, tenetur itaque officiis minus deserunt.</p>  </div> 
+<!-- A div is a block level element that pushes the next element down while a span is inline so other elements not pushed. This is useful if you want to format just a portion of the text like in the about section -->
+
+   <div id="contact" class="card">
+     <h3>Contact Me</h3>
+     <ul>
+       <li>Address: Isekai</li>
+       <li>Phone: 555555</li>
+     </ul>
+   </div>
+   <div id="footer">
+     <p>Copyright 2021</p>
+   </div>
  
 </body>
 </html>

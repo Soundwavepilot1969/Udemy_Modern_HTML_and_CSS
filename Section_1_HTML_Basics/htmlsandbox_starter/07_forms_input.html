@@ -7,6 +7,60 @@
   <title>Forms & Input</title>
 </head>
 <body>
-  
+  <form action="process.php"> <!-- submitting form and making it do something happens server side using something like php, node etc-->
+    <div> <!-- Divisions to separate the markup-->
+      <label for="name">Name</label><br> <!-- label for the below text box-->
+      <input type="text" id="name" name="name" placeholder="Enter Name"> <!-- input textbox. adding the id(same as for in label) attribute highlights the form when label is clicked-->
+      <!-- On the server side the name attribute is used to grab the value of the input entered -->
+      <!-- placeholder attribute for text that goes away on clicking and value attribute for prefilled value-->
+    </div><br>
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email"> <!-- adding type makes user only able to enter email-->
+
+    </div><br>
+    <div>
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" cols="50" rows="10"></textarea> <!-- Message Box-->
+    </div>
+    <div>
+      <label for="sex">Sex</label><br>
+      <select name="sex" id="sex"> <!-- Dropdown list-->
+        <option value="Male" selected>Male</option> <!-- selected will select this option on loading page-->
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age"> <!-- allows only numbers-->
+
+    </div><br>
+    <div>
+      <label for="birthdate">Birthdate</label><br>
+      <input type="date" name="birthday" id="birthdate"> <!-- Date entry dropdown box-->
+
+
+    </div><br>
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" name="membership" value="simple" id="membership">Simple
+      <input type="radio" name="membership" value="standard" id="membership" checked>Standard <!-- checked will check this button on loading page-->
+      <input type="radio" name="membership" value="super" id="membership">Super
+    </div><br>
+    <div>
+      <label for="optin">Opt In</label><br>
+      <input type="checkbox" name="checkbox" value="+Offer1" id="added1">Offer1
+      <input type="checkbox" name="checkbox" value="+Offer2" id="added2">Offer2
+
+    </div><br>
+    <div>
+      <!-- Two ways to create submit buttons. 1 - input submit and 2 - button submit -->
+      <input type="submit" value="Submit"><br> <!-- this is inside the form so submits this form-->
+      <button type="submit">Submit</button><br>
+      <button type="reset">Reset</button> <!--Clears the form-->
+    </div>
+
+  </form>
 </body>
 </html>
